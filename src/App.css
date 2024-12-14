@@ -1,0 +1,147 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.App {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+}
+
+form input[type="text"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* ToDo List Styles */
+.outerDiv ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.outerDiv li {
+  background-color: #f4f4f4;
+  margin: 5px auto;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.outerDiv li:hover {
+  background-color: #eaeaea;
+}
+
+.completetodo {
+  text-decoration: line-through;
+  color: grey;
+}
+
+.outerDiv li span {
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.outerDiv li span:hover {
+  color: darkred;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .App {
+    margin: 10px auto;
+    padding: 15px;
+  }
+
+  form input[type="text"] {
+    font-size: 14px;
+  }
+
+  form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .outerDiv li {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .outerDiv li span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    gap: 5px;
+  }
+
+  form input[type="text"] {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  form button {
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .outerDiv li {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .outerDiv li span {
+    font-size: 14px;
+  }
+}
